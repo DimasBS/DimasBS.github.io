@@ -1,0 +1,181 @@
+body{
+    background-image: linear-gradient(to top, rgb(42, 28, 230), rgba(39, 180, 235, 0.849) );
+}
+
+/* nav */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+}
+.nav-link:hover{
+    border-bottom: 3px solid #f836a1;
+}
+.dropdown-menu{
+    border: transparent;
+    background-color:transparent;
+    
+}
+.dropdown-item{
+    color: white;
+    background-color: #f836a1;
+}
+
+.dropdown-item:hover{
+    background-color: #6d1344fd;
+    color: white;
+}
+
+.tombol{
+    font-family: 'Graduate', cursive;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border-bottom: 3px;
+    border-top: 3px;
+}
+
+.tombol:hover{
+    background-color: #f836a1;
+    border: #f836a1;
+}
+
+.jumbotron{
+    background-image: url(https://images.pexels.com/photos/1449455/pexels-photo-1449455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4{
+    font-family: 'Lobster', cursive;
+    color: white;
+    margin-top: 120px;
+    font-weight: 500;
+    font-size: 38px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    margin-bottom: 60px;
+}
+
+.panel{
+    font-family: 'Fredoka One', cursive;
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.7);
+    border-radius: 12px;
+    margin-top: -100px;
+    margin-bottom: 70px;
+    padding: 30px;
+}
+
+.img-panel{
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+}
+
+.panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.panel p{
+    font-size: 13px;
+    font-weight: 50;
+    color: rgb(153, 150, 150);
+}
+
+.cabang{
+
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.7);
+    border-radius: 12px;
+    font-family: 'Fredoka One', cursive;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cabang p{
+    color: rgb(153, 150, 150);
+    font-size: 13px;
+    font-weight: 200;
+}
+.cabang a{
+    margin-bottom: 20px;
+}
+.cabang h3{
+    margin-top: 20px;
+}
+
+.footer{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.footer p{
+    color: rgb(153, 150, 150);
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+@media (min-width: 992px){
+    .navbar-brand, .nav-link{
+        color: white !important;
+    }
+    .nav-link{
+        font-family: 'Graduate', cursive;
+        text-transform: uppercase;
+        margin-right: 30px;
+        }
+    .nav-link:hover{
+        border-bottom: 3px solid #f836a1;
+    }
+    .jumbotron{
+        margin-top: -70px;
+        height: 630px;
+    }
+
+    .jumbotron .display-4{
+        font-size: 70px;
+        margin-top: 150px;
+    }
+
+    .img-panel{
+        /* margin-left: px; */
+        width: 120px;
+        height: 120px;
+    }
+    .dropdown-menu{
+        font-family: 'Graduate', cursive;
+    }
+    .cabang{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .cabang h3{
+        margin-top: 0px;
+    }
+
+}
